@@ -15,11 +15,6 @@ class TownViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return PositionModel.townList(city: PriceViewController.city!).count
@@ -33,11 +28,12 @@ class TownViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
         let selectedItem = PositionModel.townList(city: PriceViewController.city!)[indexPath.row]
         PriceViewController.town = selectedItem
         performSegue(withIdentifier: "oneSegue", sender: nil)
+        
+        tableView.deselectRow(at: tableView.indexPathForSelectedRow!, animated: true)
     }
-    
 }

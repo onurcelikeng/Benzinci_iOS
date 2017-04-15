@@ -1,4 +1,4 @@
-class PositionModel
+public class PositionModel
 {
     
     public static func cityList() -> [String]

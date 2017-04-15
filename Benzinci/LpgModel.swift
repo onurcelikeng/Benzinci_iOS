@@ -1,8 +1,4 @@
-class LpgModel
+public class LpgModel : BaseModel
 {
-    var Logo: String?
-    
     var Lpg: String?
-    
-    var BgColor: String?
 }

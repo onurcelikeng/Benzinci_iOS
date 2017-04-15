@@ -2,31 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIApplicationShortcutItems</key>
-	<array>
-		<dict>
-			<key>UIApplicationShortcutItemSubtitle</key>
-			<string>Akaryakıt fiyatları</string>
-			<key>UIApplicationShortcutItemIconType</key>
-			<string>UIApplicationShortcutIconTypeSearch</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Fiyatlar</string>
-			<key>UIApplicationShortcutItemType</key>
-			<string>Search</string>
-		</dict>
-		<dict>
-			<key>UIApplicationShortcutItemSubtitle</key>
-			<string>Akaryakıt istasyonları</string>
-			<key>UIApplicationShortcutItemIconType</key>
-			<string>UIApplicationShortcutIconTypeMarkLocation</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Benzinlikler</string>
-			<key>UIApplicationShortcutItemType</key>
-			<string>MarkLocation</string>
-		</dict>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en_US</string>
+	<key>CFBundleDisplayName</key>
+	<string>Benzinci</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -43,8 +22,48 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Yakınlarıdaki akaryakıt istasyonlarını keşfetmek için konumunuza ihtiyacımız var.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Yakınlarıdaki akaryakıt istasyonlarını keşfetmek için konumunuza ihtiyacımız var.</string>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>gasstation</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Akaryakıt istasyonları</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Benzinlikler</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>type1</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>price</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Akaryakıt fiyatları</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Fiyatlar</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>type2</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>campaign</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Akaryakıt Kampanyaları</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Kampanyalar</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>type3</string>
+		</dict>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
