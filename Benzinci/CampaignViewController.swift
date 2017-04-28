@@ -44,8 +44,8 @@ class CampaignViewController : UIViewController, UITableViewDataSource, UITableV
 
         let imageURL = NSURL(string: self.campaigns[indexPath.row].Image!)
         if imageURL != nil {
-            let data = NSData(contentsOf: (imageURL as? URL)!)
-            cell.Logo.image = UIImage(data: data as! Data)
+            let data = NSData(contentsOf: (imageURL as URL?)!)
+            cell.Logo.image = UIImage(data: data! as Data)
         }
         
         return cell

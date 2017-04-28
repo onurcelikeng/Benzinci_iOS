@@ -30,7 +30,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.startUpdatingLocation()
             mapView.showsUserLocation = true
-            
+
             self.GetGasStationRequest()
         }
 

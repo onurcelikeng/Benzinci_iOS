@@ -12,8 +12,14 @@
 		601B76861E4BA9D50075760A /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601B76851E4BA9D50075760A /* UIImage.swift */; };
 		601BE8871E64DEB200AE2895 /* CampaignTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601BE8861E64DEB200AE2895 /* CampaignTableViewCell.swift */; };
 		601BFD101E6301C4002C5B94 /* CampaignModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601BFD0F1E6301C4002C5B94 /* CampaignModel.swift */; };
+		6044ABF01EB3CB5300DDEC2F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6044ABEF1EB3CB5300DDEC2F /* NotificationCenter.framework */; };
+		6044ABF31EB3CB5300DDEC2F /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6044ABF21EB3CB5300DDEC2F /* TodayViewController.swift */; };
+		6044ABF61EB3CB5300DDEC2F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6044ABF41EB3CB5300DDEC2F /* MainInterface.storyboard */; };
+		6044ABFA1EB3CB5300DDEC2F /* Benzinci.Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6044ABEE1EB3CB5300DDEC2F /* Benzinci.Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		60641FD81E21CDA2001778A6 /* LogoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60641FD71E21CDA2001778A6 /* LogoHelper.swift */; };
 		607FB1FD1E6634B600765190 /* CampaignDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FB1FC1E6634B600765190 /* CampaignDetailsViewController.swift */; };
+		609E521F1EA75FC50041D9E0 /* ChargeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E521E1EA75FC50041D9E0 /* ChargeModel.swift */; };
+		609E52211EA7601B0041D9E0 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609E52201EA7601B0041D9E0 /* DataModel.swift */; };
 		60E9D5631E1B130800EC08B1 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9D5621E1B130800EC08B1 /* BaseModel.swift */; };
 		60EF5C921E2042330094BB0D /* DataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EF5C911E2042330094BB0D /* DataClient.swift */; };
 		60F8A2021E55CBFC0026B970 /* MotorinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F8A2011E55CBFC0026B970 /* MotorinTableViewCell.swift */; };
@@ -42,6 +48,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6044ABF81EB3CB5300DDEC2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70EBA7A71D9C335E0005AAD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6044ABED1EB3CB5300DDEC2F;
+			remoteInfo = Benzinci.Widget;
+		};
 		70EBA7C41D9C335E0005AAD4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 70EBA7A71D9C335E0005AAD4 /* Project object */;
@@ -51,6 +64,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6044ABFE1EB3CB5300DDEC2F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6044ABFA1EB3CB5300DDEC2F /* Benzinci.Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		044DF02DB21FB00FA5821CE6 /* Pods-Benzinci.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Benzinci.release.xcconfig"; path = "Pods/Target Support Files/Pods-Benzinci/Pods-Benzinci.release.xcconfig"; sourceTree = "<group>"; };
 		0E4861C66238C6D361A7130C /* Pods-Benzinci.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Benzinci.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Benzinci/Pods-Benzinci.debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,8 +86,15 @@
 		601B76851E4BA9D50075760A /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		601BE8861E64DEB200AE2895 /* CampaignTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignTableViewCell.swift; sourceTree = "<group>"; };
 		601BFD0F1E6301C4002C5B94 /* CampaignModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignModel.swift; sourceTree = "<group>"; };
+		6044ABEE1EB3CB5300DDEC2F /* Benzinci.Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Benzinci.Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6044ABEF1EB3CB5300DDEC2F /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		6044ABF21EB3CB5300DDEC2F /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		6044ABF51EB3CB5300DDEC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6044ABF71EB3CB5300DDEC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60641FD71E21CDA2001778A6 /* LogoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoHelper.swift; sourceTree = "<group>"; };
 		607FB1FC1E6634B600765190 /* CampaignDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignDetailsViewController.swift; sourceTree = "<group>"; };
+		609E521E1EA75FC50041D9E0 /* ChargeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargeModel.swift; sourceTree = "<group>"; };
+		609E52201EA7601B0041D9E0 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		60E9D5621E1B130800EC08B1 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		60EF5C911E2042330094BB0D /* DataClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataClient.swift; sourceTree = "<group>"; };
 		60F8A2011E55CBFC0026B970 /* MotorinTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotorinTableViewCell.swift; sourceTree = "<group>"; };
@@ -93,6 +127,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6044ABEB1EB3CB5300DDEC2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6044ABF01EB3CB5300DDEC2F /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		70EBA7AC1D9C335E0005AAD4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -112,6 +154,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6044ABF11EB3CB5300DDEC2F /* Benzinci.Widget */ = {
+			isa = PBXGroup;
+			children = (
+				6044ABF21EB3CB5300DDEC2F /* TodayViewController.swift */,
+				6044ABF41EB3CB5300DDEC2F /* MainInterface.storyboard */,
+				6044ABF71EB3CB5300DDEC2F /* Info.plist */,
+			);
+			path = Benzinci.Widget;
+			sourceTree = "<group>";
+		};
 		60CD18711DE4D79E0057C0A9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +205,8 @@
 				60E9D5621E1B130800EC08B1 /* BaseModel.swift */,
 				60FB452F1E203B9800D0E007 /* StationModel.swift */,
 				601BFD0F1E6301C4002C5B94 /* CampaignModel.swift */,
+				609E521E1EA75FC50041D9E0 /* ChargeModel.swift */,
+				609E52201EA7601B0041D9E0 /* DataModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -185,6 +239,7 @@
 			children = (
 				70EBA7B11D9C335E0005AAD4 /* Benzinci */,
 				70EBA7C61D9C335E0005AAD4 /* BenzinciTests */,
+				6044ABF11EB3CB5300DDEC2F /* Benzinci.Widget */,
 				70EBA7B01D9C335E0005AAD4 /* Products */,
 				70EBA7D21D9C33780005AAD4 /* Frameworks */,
 				E173E31D7B6C208C8332C96D /* Pods */,
@@ -196,6 +251,7 @@
 			children = (
 				70EBA7AF1D9C335E0005AAD4 /* Benzinci.app */,
 				70EBA7C31D9C335E0005AAD4 /* BenzinciTests.xctest */,
+				6044ABEE1EB3CB5300DDEC2F /* Benzinci.Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,6 +288,7 @@
 			children = (
 				70EBA7D31D9C33780005AAD4 /* MapKit.framework */,
 				CA8FB8DD8D6C63D91D36FE94 /* Pods_Benzinci.framework */,
+				6044ABEF1EB3CB5300DDEC2F /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -248,6 +305,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6044ABED1EB3CB5300DDEC2F /* Benzinci.Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6044ABFD1EB3CB5300DDEC2F /* Build configuration list for PBXNativeTarget "Benzinci.Widget" */;
+			buildPhases = (
+				6044ABEA1EB3CB5300DDEC2F /* Sources */,
+				6044ABEB1EB3CB5300DDEC2F /* Frameworks */,
+				6044ABEC1EB3CB5300DDEC2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Benzinci.Widget;
+			productName = Benzinci.Widget;
+			productReference = 6044ABEE1EB3CB5300DDEC2F /* Benzinci.Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		70EBA7AE1D9C335E0005AAD4 /* Benzinci */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70EBA7CC1D9C335E0005AAD4 /* Build configuration list for PBXNativeTarget "Benzinci" */;
@@ -258,10 +332,12 @@
 				70EBA7AD1D9C335E0005AAD4 /* Resources */,
 				4A2404C865148E6A2FCD4055 /* [CP] Embed Pods Frameworks */,
 				C5F19C4B063B3C4373554FE4 /* [CP] Copy Pods Resources */,
+				6044ABFE1EB3CB5300DDEC2F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6044ABF91EB3CB5300DDEC2F /* PBXTargetDependency */,
 			);
 			name = Benzinci;
 			productName = Benzinci;
@@ -292,10 +368,15 @@
 		70EBA7A71D9C335E0005AAD4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Onur Celik";
 				TargetAttributes = {
+					6044ABED1EB3CB5300DDEC2F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7S7K8Z75EQ;
+						ProvisioningStyle = Automatic;
+					};
 					70EBA7AE1D9C335E0005AAD4 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 7S7K8Z75EQ;
@@ -329,11 +410,20 @@
 			targets = (
 				70EBA7AE1D9C335E0005AAD4 /* Benzinci */,
 				70EBA7C21D9C335E0005AAD4 /* BenzinciTests */,
+				6044ABED1EB3CB5300DDEC2F /* Benzinci.Widget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6044ABEC1EB3CB5300DDEC2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6044ABF61EB3CB5300DDEC2F /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		70EBA7AD1D9C335E0005AAD4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -402,6 +492,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6044ABEA1EB3CB5300DDEC2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6044ABF31EB3CB5300DDEC2F /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		70EBA7AB1D9C335E0005AAD4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -427,11 +525,13 @@
 				60F8A2021E55CBFC0026B970 /* MotorinTableViewCell.swift in Sources */,
 				70B29F141DB0194F00CF6410 /* PriceViewController.swift in Sources */,
 				7071D1831DA6602A00A5B67C /* WordHelper.swift in Sources */,
+				609E52211EA7601B0041D9E0 /* DataModel.swift in Sources */,
 				7071D1871DA6616300A5B67C /* FuelOilModel.swift in Sources */,
 				70EBA7B31D9C335E0005AAD4 /* AppDelegate.swift in Sources */,
 				7071D18E1DA6629B00A5B67C /* MotorinModel.swift in Sources */,
 				70B29F121DB0128A00CF6410 /* TownViewController.swift in Sources */,
 				7071D1851DA660A900A5B67C /* BenzinModel.swift in Sources */,
+				609E521F1EA75FC50041D9E0 /* ChargeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +546,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6044ABF91EB3CB5300DDEC2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6044ABED1EB3CB5300DDEC2F /* Benzinci.Widget */;
+			targetProxy = 6044ABF81EB3CB5300DDEC2F /* PBXContainerItemProxy */;
+		};
 		70EBA7C51D9C335E0005AAD4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 70EBA7AE1D9C335E0005AAD4 /* Benzinci */;
@@ -454,6 +559,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6044ABF41EB3CB5300DDEC2F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6044ABF51EB3CB5300DDEC2F /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		70EBA7B61D9C335E0005AAD4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -473,6 +586,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6044ABFB1EB3CB5300DDEC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = 7S7K8Z75EQ;
+				INFOPLIST_FILE = Benzinci.Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onurcelikeng.Benzinci.Benzinci-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6044ABFC1EB3CB5300DDEC2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = 7S7K8Z75EQ;
+				INFOPLIST_FILE = Benzinci.Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onurcelikeng.Benzinci.Benzinci-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		70EBA7CA1D9C335E0005AAD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -570,6 +713,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0E4861C66238C6D361A7130C /* Pods-Benzinci.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7S7K8Z75EQ;
 				INFOPLIST_FILE = Benzinci/Info.plist;
@@ -585,6 +729,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 044DF02DB21FB00FA5821CE6 /* Pods-Benzinci.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7S7K8Z75EQ;
 				INFOPLIST_FILE = Benzinci/Info.plist;
@@ -629,6 +774,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6044ABFD1EB3CB5300DDEC2F /* Build configuration list for PBXNativeTarget "Benzinci.Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6044ABFB1EB3CB5300DDEC2F /* Debug */,
+				6044ABFC1EB3CB5300DDEC2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		70EBA7AA1D9C335E0005AAD4 /* Build configuration list for PBXProject "Benzinci" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

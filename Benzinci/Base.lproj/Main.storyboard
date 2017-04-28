@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jhe-ux-mhk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jhe-ux-mhk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -526,13 +526,13 @@
             </objects>
             <point key="canvasLocation" x="-887" y="1057"/>
         </scene>
-        <!--Favoriler-->
+        <!--E-Şarj-->
         <scene sceneID="9DL-fJ-ccZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ix5-2K-skb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favoriler" image="favorite" id="nXV-0F-BWd"/>
+                    <tabBarItem key="tabBarItem" title="E-Şarj" image="charge" id="nXV-0F-BWd"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="QnB-ay-kO8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="QnB-ay-kO8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -548,10 +548,10 @@
             </objects>
             <point key="canvasLocation" x="430" y="2333"/>
         </scene>
-        <!--FavoritePlaceView-->
+        <!--ChargeView-->
         <scene sceneID="qm7-zn-oDz">
             <objects>
-                <viewController title="FavoritePlaceView" id="bPY-FX-qRx" sceneMemberID="viewController">
+                <viewController title="ChargeView" id="bPY-FX-qRx" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aHZ-QS-mzP"/>
                         <viewControllerLayoutGuide type="bottom" id="P8I-CJ-CcO"/>
@@ -561,7 +561,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Favori Şehirlerim" id="ulj-8O-xG9"/>
+                    <navigationItem key="navigationItem" title="E-Şarj İstasyonları" id="ulj-8O-xG9"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="16b-7b-gHB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -623,8 +623,8 @@
     </scenes>
     <resources>
         <image name="campaign" width="25" height="25"/>
+        <image name="charge" width="25" height="25"/>
         <image name="direction" width="25" height="25"/>
-        <image name="favorite" width="25" height="25"/>
         <image name="gasstation" width="25" height="25"/>
         <image name="information" width="20" height="20"/>
         <image name="price" width="25" height="25"/>

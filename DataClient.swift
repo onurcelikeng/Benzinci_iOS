@@ -251,8 +251,8 @@ public class DataClient
     public func GetGasStations(location:CLLocation, completionHandler: @escaping ([StationModel]) -> Void)
     {
         var stationList: [StationModel] = []
+        
         var request = URLRequest(url: URL(string: "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + String(location.coordinate.latitude) + "%2C" + String(location.coordinate.longitude) + "&radius=9000&types=gas_station&key=AIzaSyDSuWOakAmCKEzeDfPq3fRfuISKu0nhjmU")!)
-
         request.httpMethod = "GET"
         URLSession.shared.dataTask(with:request, completionHandler:
         {
@@ -279,6 +279,40 @@ public class DataClient
                     
                 catch{}
             }
+        }).resume()
+    }
+    
+    public func GetChargeStations(completionHandler: @escaping ([DataModel]) -> Void)
+    {
+        var stationList : [DataModel] = []
+        
+        var request = URLRequest(url: URL(string: "http://esarj.com/api/stations")!)
+        request.httpMethod = "GET"
+        URLSession.shared.dataTask(with:request, completionHandler:
+        {
+                (data, response, error) in
+                guard let data = data, error == nil else { return }
+                
+                if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode == 200
+                {
+                    do
+                    {
+                        let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! NSDictionary
+                        if json.value(forKey: "key") as! String == "OK"
+                        {
+
+                            let stations = json["data"] as? [[String: AnyObject]]
+                            
+                            for station in stations!
+                            {
+                                stationList.append(DataModel(dictionary: station as NSDictionary)!)
+                            }
+                            completionHandler(stationList)
+                        }
+                    }
+                        
+                    catch{}
+                }
         }).resume()
     }
 }
