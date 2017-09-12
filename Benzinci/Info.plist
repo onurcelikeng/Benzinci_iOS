@@ -63,6 +63,16 @@
 			<key>UIApplicationShortcutItemType</key>
 			<string>type3</string>
 		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>charge</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>E-Şarj İstasyonları</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>E-Şarj</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>type4</string>
+		</dict>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

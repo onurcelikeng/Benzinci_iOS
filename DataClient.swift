@@ -172,8 +172,8 @@ public class DataClient
                 {
                     let model = LpgModel()
                     
-                    model.Logo = try! "http://lpgal.com" + table.childNode(i).childNode(1).childNode(0).attr("src");
-                    model.Lpg = try! table.childNode(i).childNode(2).childNode(0).childNode(0).toString();
+                    model.Logo = try! "http://lpgal.com" + table.childNode(i).childNode(1).childNode(0).attr("src")
+                    model.Lpg = try! table.childNode(i).childNode(2).childNode(0).childNode(0).toString()
                     
                     list.append(model)
                 }

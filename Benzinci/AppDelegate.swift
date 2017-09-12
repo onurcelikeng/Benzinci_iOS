@@ -54,6 +54,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate
             {
                 tabVC.selectedIndex = 2
             }
+            
+            else if shortcutItem.type == "type4"
+            {
+                tabVC.selectedIndex = 3
+            }
         }
         
     }
